@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>按"!"回车可以生成html结构</title>
+    <style>
+        /* 快速格式化代码 shift+alt+A idea是crtl+shift+A */
+        .demo1 {
+            /* tdn直接生成 */
+            text-decoration: none;
+            /* w100 直接生成 */
+            width: 500px;
+            height: 500px;
+            text-align: center;
+
+            text-indent: 2em;
+
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div*10 可以生成10个div，其他标签也是一样的 -->
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <p></p>
+    <p></p>
+    <p></p>
+
+    <!-- 如果标签具有父子关系，可以使用>,如 ul>li  -->
+    <ul>
+        <li>hh</li>
+        <li>haha</li>
+    </ul>
+
+    <ol>
+        <li>你好</li>
+        <li>我好</li>
+        <li>大家好</li>
+    </ol>
+
+    <!-- div>span  -->
+    <div>
+        <span>
+
+        </span>
+    </div>
+
+    <!-- 兄弟关系 如 div+p 使用+号 -->
+    <div></div>
+    <p></p>
+
+    <!-- 使用.nav 生成 <div class="nav"></div> -->
+    <div id="name"></div>
+
+    <!-- <p class="v"></p> p.v 其中p用于指定要生成的标签名 -->
+
+    <!-- 生成带有一定顺序的 使用  .demo$*5  -->
+    <div class="demo1">我是你爹</div>
+    <div class="demo2"></div>
+    <div class="demo3"></div>
+    <div class="demo4"></div>
+    <div class="demo5"></div>
+
+    <!-- 生成的标签里面有几个文字  使用  div{内容} -->
+    <div>我是你最亲爱的人</div>
+
+    <!-- div{$}*5    $表示自增符号 -->
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+</body>
+
+</html>

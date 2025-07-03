@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单域（了解）</title>
+</head>
+<body>
+    <!-- 表单是为了收集用户信息
+            由表单域，表单控件和提示信息3个部分构成 
+            <form action="url地址" method="表单域名称">
+            各种表单元素控件 </form> 
+        -->
+    <form action="demo.php" method="get" name="name1">
+        <!-- 表单控件（表单元素） 
+            type="button"定义可点击按钮（多数情况下，用于通过JavaScript启动脚本）
+            type="checkbox"定义复选框
+            type="file"定义输入字段和“浏览”按钮，供文件上传
+            type="hidden"定义隐藏的输入字段
+            type="image"定义图像形式的提交按钮
+            type="password"定义密码字段，该字段中的字符被掩码
+            type="radio"定义单选按钮
+            type="reset"定义重置按钮，重置按钮会清楚表单中的所有数据
+            type="submit"定义提交按钮，提交按钮会把表单数据发送到服务器
+            type="text"定义单行的输入字段，用户可在其中输入文本，默认宽度为20个字符
+        -->
+        用户名：<input type="text" name="username" value="请输入用户名" maxlength="6"><br>
+        <!-- text 文本框 用户可以在里面输入任何文字 -->
+        密码：<input type="password" name="password"><br>
+        <!-- password 密码框 用户看不见输入的密码 -->
+        <!-- name 是表单元素的名字，这里性别按钮必须由相同的名字name才可以实现多选1 -->
+        <!-- 单选按钮和复选框可以设置checked 属性，当页面打开时就可以默认选中这个按钮 -->
+        性别： 男 <input type="radio" name="sex" value="男" checked="checked"> 女 <input type="radio" name="sex" value="女"> 人妖：<input type="radio" name="sex" value="人妖">
+        <!-- radio 单选按钮，可以实现多选 -->
+        <br>
+        爱好： 吃饭 <input type="checkbox" name="hobby" value="吃饭" checked="checed"> 睡觉 <input type="checkbox" name="hobby" value="睡觉"> 打豆豆 <input type="checkbox" name="hobby" value="打豆豆">
+        <!-- checkbox 复选框，可以实现多选 --> <br>
+        <input type="submit" value="免费注册" ><br>
+        <!-- 点击了提交按钮，可以把表单域form里面的表单元素里面的值提交给后台服务器 -->
+        <input type="reset" value="重置">
+        <!-- 重置按钮可以还原表单元素初始的默认状态 -->
+        <input type="button" value="获取短信验证码">
+        <!-- 普通按钮 后期结合js配合使用 -->
+        上传头像：<input type="file" value="上传">
+        <!-- 文件域使用场景 上传文件使用的 -->
+
+    </form>
+    <!-- value值主要是给后台人员使用的，name主要用于单选框和复选框,单选框和复选框要有相同的name
+        checked 规定此input元素首次加载时应当被选中
+        maxlength 正整数 规定输入字段中字符的最大长度 -->
+</body>
+</html>
