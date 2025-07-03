@@ -1,0 +1,79 @@
+配置和初始化：
+
+git config --global user.name "Your Name": 配置全局用户名。
+git config --global user.email "your.email@example.com": 配置全局用户邮箱。
+git init: 在当前目录初始化一个新的 Git 仓库。
+基本操作：
+
+git clone <repository>: 克隆远程仓库到本地。
+git add <file>: 将文件添加到暂存区。
+git commit -m "Commit message": 提交暂存区的内容到本地仓库。
+git status: 查看工作区、暂存区的状态。
+git diff: 查看工作区和暂存区的文件差异。
+git log: 查看提交历史。
+git checkout <branch>: 切换到指定分支或提交。
+git branch: 查看本地分支。
+git merge <branch>: 将指定分支合并到当前分支。
+远程操作：
+
+git remote add origin <repository>: 添加远程仓库。
+git push origin <branch>: 将本地分支推送到远程仓库。
+git pull origin <branch>: 从远程仓库拉取并合并更新。
+git fetch origin: 从远程仓库获取更新，但不合并。
+分支操作：
+
+git checkout -b <branch>: 创建并切换到新分支。
+git branch -d <branch>: 删除本地分支。
+git push origin --delete <branch>: 删除远程分支。
+git merge <branch>: 将指定分支合并到当前分支。
+标签操作：
+
+git tag: 列出所有标签。
+git tag <tagname>: 创建轻量标签。
+git tag -a <tagname> -m "Tag message": 创建附注标签。
+撤销和重置：
+
+git reset HEAD <file>: 取消文件暂存。
+git checkout -- <file>: 恢复工作区文件到最近一次提交状态。
+git reset --hard <commit>: 重置当前分支到指定提交。
+git revert <commit>: 创建一个新的提交，撤销指定的提交。
+git config --list ：查看配置
+
+当然，下面是你这会儿关于 Git 相关问题的知识总结：
+
+1. **创建新分支和切换分支：**
+   - 使用 `git checkout -b <new-branch-name>` 或 `git switch -c <new-branch-name>` 来创建新分支并切换到新分支。
+
+2. **删除分支：**
+   - 使用 `git branch -d <branch-name>` 来删除本地分支。
+   - 使用 `git push origin --delete <branch-name>` 来删除远程分支。
+
+3. **提交更改：**
+   - 使用 `git add <file-name>` 来添加更改到暂存区。
+   - 使用 `git commit -m "Commit message"` 来提交更改。
+
+4. **合并分支：**
+   - 使用 `git merge <branch-name>` 来合并指定分支到当前分支。
+
+5. **交互式 rebase：**
+   - 使用 `git rebase -i <commit-hash>^` 来进行交互式 rebase。编辑器中可选择操作，如删除、编辑、合并提交。
+
+6. **强制推送：**
+   - 使用 `git push origin <branch-name> --force` 来强制推送更改到远程仓库。
+
+7. **删除特定文件：**
+   - 使用 `git rm <file-path>` 来删除文件，然后提交更改。
+
+8. **合并更改：**
+   - 切换到主分支，使用 `git merge <branch-name>` 合并其他分支的更改。解决冲突后提交合并。
+
+9. **远程仓库同步：**
+   - 使用 `git push origin <branch-name>` 推送本地更改到远程仓库。
+   - 使用 `git pull origin <branch-name>` 拉取远程更改到本地。
+
+10. **重要注意事项：**
+    - 备份重要数据，尤其在进行涉及历史更改的操作前。
+    - 在团队中协调，确保操作不会影响其他人的工作。
+    - 谨慎执行强制操作，以免造成数据丢失或冲突。
+
+这些是你提出问题期间讨论的 Git 相关知识点的总结。Git 是一个功能强大的版本控制工具，可以帮助团队有效地协作和管理代码。在使用 Git 时，谨慎操作和沟通是关键，以确保项目的代码历史和协作的顺利进行。

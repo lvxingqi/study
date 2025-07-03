@@ -1,0 +1,4 @@
+version01
+    自己手写实现观察者模式
+version02
+    java内置类

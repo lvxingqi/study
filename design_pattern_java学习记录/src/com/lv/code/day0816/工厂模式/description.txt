@@ -1,0 +1,8 @@
+version01
+    Pizza店（非抽象）自己new 对象
+version02
+    Pizza店（非抽象）将new Pizza对象交给简单工厂
+version03
+    Pizza店（抽象）将createPizza移回自己里面，并声明为抽象的（工厂方法）
+    Pizza店决定怎么做pizza（顺序），Pizza也是抽象的，Pizza店持有pizza的引用，以此
+    进行对pizza的一系列操作。根据不同地区的pizza店（非抽象）制作不同地区风味的pizza。
